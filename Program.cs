@@ -7,11 +7,11 @@ Console.Write("Введите пятизначное число: ");
 int X = Convert.ToInt32(Console.ReadLine());
 int c = 10;
 int z=10000;
-if (X/z==X/c);
+if (X/z==X%c)
 {
-    int z=z/10;
-    int c=c*10;
-    if (X/z==X/c);
+    z = z / 10;
+    c = c * 10;
+    if ((X/z)%10==(X%c)/10)
     {
         Console.WriteLine ($"{X} является полиндромным числом");
     }
